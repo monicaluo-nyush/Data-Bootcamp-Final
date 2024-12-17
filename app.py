@@ -31,7 +31,7 @@ xgb_model.fit(X_train, y_train)
 
 #UI
 st.title('Binary Prediction Dashboard')
-st.write('These are prediction using classifier models, please do not use to make any predictions for any health conditions! If you have cancer, please consult with a medical professional!') 
+st.write("These are prediction using classifier models, please do not use to make any predictions for any health conditions! If you have cancer, please consult with a medical professional!") 
 # Input fields for features
 st.write("## Input Features for Prediction:")
 age_input = st.number_input('How old is the patient')
@@ -104,4 +104,4 @@ def interpret_prediction(pred):
 st.write(f"Random Forest Classifier Prediction: {interpret_prediction(rf_pred)}")
 st.write(f"XG Boost Classifier Prediction: {interpret_prediction(xgb_pred)}")
 
-st.write('These are prediction using classifier models, please do not use to make any predictions for any health conditions! If you have cancer, please consult with a medical professional!"
+st.write("These are prediction using classifier models, please do not use to make any predictions for any health conditions! If you have cancer, please consult with a medical professional!")
